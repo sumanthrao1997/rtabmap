@@ -243,7 +243,7 @@ class RTABMAP_CORE_EXPORT Parameters
     RTABMAP_PARAM(Kp, ByteToFloat,              bool, false,  uFormat("For %s=1, binary descriptors are converted to float by converting each byte to float instead of converting each bit to float. When converting bytes instead of bits, less memory is used and search is faster at the cost of slightly less accurate matching.", kKpNNStrategy().c_str()));
     RTABMAP_PARAM(Kp, MaxDepth,                 float, 0,     "Filter extracted keypoints by depth (0=inf).");
     RTABMAP_PARAM(Kp, MinDepth,                 float, 0,     "Filter extracted keypoints by depth.");
-    RTABMAP_PARAM(Kp, MaxFeatures,              int, 500,     "Maximum features extracted from the images (0 means not bounded, <0 means no extraction).");
+    RTABMAP_PARAM(Kp, MaxFeatures,              int,  -1,     "Maximum features extracted from the images (0 means not bounded, <0 means no extraction).");
     RTABMAP_PARAM(Kp, SSC,                      bool, false,  "If true, SSC (Suppression via Square Covering) is applied to limit keypoints.");
     RTABMAP_PARAM(Kp, BadSignRatio,             float, 0.5,   "Bad signature ratio (less than Ratio x AverageWordsPerImage = bad).");
     RTABMAP_PARAM(Kp, NndrRatio,                float, 0.8,   "NNDR ratio (A matching pair is detected, if its distance is closer than X times the distance of the second nearest neighbor.)");
