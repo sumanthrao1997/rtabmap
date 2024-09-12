@@ -204,7 +204,7 @@ int main(int argc, char *argv[])
 	}
 	else // if(sequenceName.find("freiburg3") != std::string::npos)
 	{
-		model = CameraModel(outputName + "_calib", 535.4, 539.2, 320.1, 247.6, opticalRotation, 0, cv::Size(640, 480));
+		model = CameraModel(outputName + "_calib", 542.822841, 542.576870,  315.593520, 237.756098, opticalRotation, 0, cv::Size(640, 480));
 	}
 	// parameters.insert(ParametersPair(Parameters::kg2oBaseline(), uNumber2Str(40.0f/model.fx())));
 	model.save(path);
